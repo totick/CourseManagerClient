@@ -1,4 +1,4 @@
-System.register(["angular2/core"], function(exports_1) {
+System.register(["angular2/core", "angular2/router"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,27 +8,32 @@ System.register(["angular2/core"], function(exports_1) {
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1;
-    var TeachersComponent;
+    var core_1, router_1;
+    var MenuComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
-            TeachersComponent = (function () {
-                function TeachersComponent() {
+            MenuComponent = (function () {
+                function MenuComponent() {
                 }
-                TeachersComponent = __decorate([
+                MenuComponent = __decorate([
                     core_1.Component({
-                        templateUrl: '../views/teachers.html',
+                        selector: 'cm-menu',
+                        templateUrl: '../views/menu.html',
+                        directives: [router_1.ROUTER_DIRECTIVES]
                     }), 
                     __metadata('design:paramtypes', [])
-                ], TeachersComponent);
-                return TeachersComponent;
+                ], MenuComponent);
+                return MenuComponent;
             })();
-            exports_1("TeachersComponent", TeachersComponent);
+            exports_1("MenuComponent", MenuComponent);
         }
     }
 });
-//# sourceMappingURL=teachers.component.js.map
+//# sourceMappingURL=menu.component.js.map

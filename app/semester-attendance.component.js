@@ -9,26 +9,26 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var TeachersComponent;
+    var SemesterAttendanceComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            TeachersComponent = (function () {
-                function TeachersComponent() {
+            SemesterAttendanceComponent = (function () {
+                function SemesterAttendanceComponent() {
                 }
-                TeachersComponent = __decorate([
+                SemesterAttendanceComponent = __decorate([
                     core_1.Component({
-                        templateUrl: '../views/teachers.html',
+                        templateUrl: '../views/semester-attendance.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], TeachersComponent);
-                return TeachersComponent;
+                ], SemesterAttendanceComponent);
+                return SemesterAttendanceComponent;
             })();
-            exports_1("TeachersComponent", TeachersComponent);
+            exports_1("SemesterAttendanceComponent", SemesterAttendanceComponent);
         }
     }
 });
-//# sourceMappingURL=teachers.component.js.map
+//# sourceMappingURL=semester-attendance.component.js.map

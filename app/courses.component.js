@@ -9,26 +9,26 @@ System.register(["angular2/core"], function(exports_1) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
     var core_1;
-    var TeachersComponent;
+    var CoursesComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             }],
         execute: function() {
-            TeachersComponent = (function () {
-                function TeachersComponent() {
+            CoursesComponent = (function () {
+                function CoursesComponent() {
                 }
-                TeachersComponent = __decorate([
+                CoursesComponent = __decorate([
                     core_1.Component({
-                        templateUrl: '../views/teachers.html',
+                        templateUrl: '../views/courses.html'
                     }), 
                     __metadata('design:paramtypes', [])
-                ], TeachersComponent);
-                return TeachersComponent;
+                ], CoursesComponent);
+                return CoursesComponent;
             })();
-            exports_1("TeachersComponent", TeachersComponent);
+            exports_1("CoursesComponent", CoursesComponent);
         }
     }
 });
-//# sourceMappingURL=teachers.component.js.map
+//# sourceMappingURL=courses.component.js.map

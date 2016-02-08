@@ -15,7 +15,11 @@ export class TeachersComponent implements OnInit {
     constructor(private _teacherService : TeacherService){}
     
     getTeachers(){
-        this._teacherService.getTeachers().then((teachers : Teacher[]) => this.teachers = teachers);
+        this._teacherService.getTeachers().subscribe(
+            data => this.teachers = data.teachers,
+            error => alert(error),
+            () => console.log("Finished") 
+        );
     }
     
     ngOnInit():any{

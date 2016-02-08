@@ -69,8 +69,8 @@
                             <tr>
                                 <th>Id</th><th>First name</th><th>Last name</th><th>Person id</th><th>Email</th>    
                             </tr>
-                            <tr>
-                                <td>2</td><td>John</td><td>Lundgren</td><td>7606069545</td><td>totick@hotmail.com</td>
+                            <tr *ngFor="#teacher of teachers">
+                                <td>{{teacher.id}}</td><td>{{teacher.firstName}}</td><td>{{teacher.lastName}}</td><td>{{teacher.personNr}}</td><td>{{teacher.email}}</td>
                             </tr>                            
                         </table>
                         
